@@ -1,0 +1,150 @@
+---
+- distro: Debian
+  releases:
+  - codename: squeeze
+    version: 6
+    release: February 2011
+    eol: "May 2014 (LTS: Feb 2016)"
+    kernel: 2.6.32
+    mysql: 5.1
+    apache: 2.2.16
+    php: 5.3.3
+    init: sysvinit
+    state: dead
+  - codename: wheezy
+    version: 7
+    release: May 2013
+    state: close
+    eol: "April 2016 (LTS: May 2018)"
+    kernel: 3.2.41
+    mysql: 5.5
+    php: 5.4.4
+    apache: 2.2.22
+    init: sysvinit
+  - codename: wheezy-backports
+    version: 7
+    release: May 2013
+    eol: 2016?
+    state: close
+    kernel: 3.16
+    mysql: 5.5
+    php: 5.4.4
+    apache: 2.2.22
+    init: sysvinit
+  - codename: jessie
+    version: 8
+    release: April 2015
+    eol: '2018? (LTS: 2020)'
+    kernel: 3.16.0
+    mysql: 5.5
+    php: 5.6.7
+    apache: 2.4.10
+    init: systemd
+  - codename: jessie-backports
+    version: 8
+    release: April 2015
+    eol: 2018?
+    kernel: 4.3
+    mysql: 5.5
+    php: 5.6.7
+    apache: 2.4.10
+    init: systemd
+  - codename: stretch
+    version: 9
+    release: June 2017
+    eol: 2020?
+    kernel: 4.9
+    mysql: mariadb-10.1
+    php: 7.0
+    apache: 2.4.25
+    init: systemd
+  - codename: buster
+    version: 10
+    release: 2019?
+    eol: 2022?
+    kernel: unknown
+    mysql: unknown
+    php: unknown
+    apache: unknown
+    init: systemd
+    state: future
+- distro: Centos/RHEL
+  releases:
+  - version: 5
+    codename: Tikanga
+    release: April 2007
+    eol: 31 March 2017
+    kernel: 2.6.18
+    mysql: 5.0.95
+    apache: 2.2.3
+    php: 5.1.6
+    init: sysvinit
+    state: dead
+  - version: 6
+    codename: Santiago
+    release: June 2011
+    eol: 30 Nov 2020
+    kernel: 2.6.32
+    mysql: 5.1.71
+    apache: 2.2.15
+    php: 5.3.3
+    init: sysvinit
+  - version: 7
+    codename: Maipo
+    release: July 2014
+    eol: 31 June 2024
+    kernel: 3.10.0
+    mysql: mariadb-5.5.35
+    apache: 2.4.6
+    php: 5.4.16
+    init: systemd
+- distro: Ubuntu
+  releases:
+  - version: 10.04
+    codename: Lucid Lynx
+    release: April 2010
+    eol: April 2015
+    state: dead
+    kernel: 2.6.32
+    mysql: 5.1.41
+    php: 5.3.2
+    apache: 2.2.14
+    init: upstart
+  - version: 12.04
+    codename: Precise Pangolin
+    release: April 2012
+    eol: April 2017
+    kernel: 3.2.0
+    mysql: 5.5.22
+    apache: 2.2.22
+    php: 5.3.10
+    init: upstart
+    state: dead
+  - version: 14.04
+    codename: Trusty Tahir
+    release: April 2014
+    eol: April 2019
+    kernel: 3.13.0
+    mysql: 5.5.47
+    apache: 2.4.7
+    php: 5.5.9
+    init: upstart
+  - version: 16.04
+    codename: Xenial Xerus
+    release: April 2016
+    eol: April 2021
+    kernel: 4.4.0
+    mysql: 5.7.12
+    php: 7.0.4
+    apache: 2.4.18
+    init: systemd
+  - version: 18.04
+    codename: B-adjective B-animal
+    release: April 2018
+    eol: April 2023
+    kernel: unknown
+    mysql: unknown
+    php: unknown
+    apache: unknown
+    init: systemd?
+    state: future
